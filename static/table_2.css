@@ -1,0 +1,27 @@
+
+body{
+    background: #8BB9C7;
+}
+.main .Title_{
+    font-size:60px;
+    margin-left: 500px;
+    float: center;
+}
+
+.main .origin{
+    width:80px;
+}
+
+
+.main .prob_num{
+    width:180px;
+
+}
+.main .prob_name{
+    width:200px;
+
+}
+.main .site{
+    width:600px;
+}
+

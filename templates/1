@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROBLEM LIST</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='list_style.css') }}">
+    <style type="text/css">
+    @font-face {
+        font-family: 'Alvania';
+        src: url('Alvania.otf');
+    }
+    @font-face {
+        font-family: 'a타이틀고딕1';
+        src: url('a타이틀고딕1.ttf');
+    }
+        ul { list-style: none }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Alvania;">PROBLEM LIST</h1>
+
+    <ul class="board-search">
+        <li>
+        <input type="radio" name="searchtype" id="name" checked="checked">
+        <label for="search01">작성자</label>
+     
+        <input type="radio" name="searchtype" id="title" checked="checked">
+        <label for="search02">제목</label>
+
+        <input type="text" placeholder="검색어를 입력하세요">
+        <input type="submit" class="btn green rounded" value=" 검색 ">
+        </li>
+    </ul>
+
+    <table class="type06" style="font-family: a타이틀고딕1;">
+        <tr>
+            <th scope="row">sw</th>
+            <td>5650</td>
+            <td>핀볼</td>
+            <td><a href="#" class="btn green rounded">바로가기</a></td>
+        </tr>
+        <tr>
+            <th scope="row" class="even">BJ</th>
+            <td class='even'>5650</td>
+            <td class='even'>핀볼</td>
+            <td class='even' , class='container'><a href="#" class="btn green rounded">바로가기</a href="#" class="btn green rounded"></td>
+        </tr>
+        <tr>
+            <th scope="row">sw</th>
+            <td>5650</td>
+            <td>핀볼</td>
+            <td><a href="#" class="btn green rounded">바로가기</a></td>
+        </tr>
+    </table>
+</body>
+</html>
+

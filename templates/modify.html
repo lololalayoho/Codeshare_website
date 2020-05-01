@@ -1,0 +1,86 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>write_page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='write.css') }}">
+ <h8 class = "longlong"><div style="font-size: 50px; text-align:center; margin-top: 70px; font-weight: bold; font-family: Alvania; color:white;" >Long Long's code</h8></div>
+ <style>
+   *{
+    font-size: 20px;
+      font-family: Consolas, sans-serif;
+   }
+</style>
+</head>
+
+<body>
+<main class="main">
+  <form action="/modify_code" method="POST"> 
+    <tr>
+      <td colspan="2">
+        <h7 class="check">choose please
+      </td>
+        </tr>
+    <tr>
+      <td valgn="top">
+        <select name="items1">
+          <option value="C++">C++</option>
+          <option value="C">C</option>
+          <option value="python">python</option>
+        </select>
+      </td>
+        </tr>
+      </h7>
+	<br>
+  <tr>
+      <p>
+      <h5 class="code"><th>code: </th></h5>
+    <h2 name="container"><td>
+    <input type="hidden" id="old_code" value="{{modi[0].code}}">
+    <input type="hidden" id="new_code">
+    <textarea cols ="100" rows="100" style="padding-left:5; padding-right:50; padding-bottom:50; height: 800px; width:100%"id="result"></textarea>
+	</td></h2>
+      </p>
+  </tr>
+  <tr>
+      <td colspan="2">
+	<input type="hidden" name="no" value="{{modi[0].no}}">
+	<input type="hidden" name="origin" value="{{modi[0].origin}}">
+	<input type="hidden" name="title" value="{{modi[0].title}}">
+	<input type="hidden" name="date" value="{{modi[0].date}}">
+	<input name="solve_code" type="hidden" id="give_code">
+        <h3 class="button"><input type="submit" value="submit" onClick="str()"></h3>
+      </td>
+  </tr>
+ 
+      
+	<script>
+	  window.onload=function(){
+	  var str = document.getElementById('old_code').value;
+	  console.log(str);
+          str = str.replace(/&lt;/g,"<");
+          str = str.replace(/&gt;/g,">");
+          str = str.replace(/"    "/g,"\t");
+      	  str = str.replace(/&quot;/g,"\"");
+      	  str = str.replace(/&#39;/g,"\'");
+	  str = str.replace(/inha_univ/g,"\/n");
+          document.getElementById('result').value=str;
+	   
+	  }
+
+	  function str(){
+    		var str = document.getElementById("result").value;
+      		str = str.replace(/</g,"&lt;");
+      		str = str.replace(/>/g,"&gt;");
+		str = str.replace(/\t/g,"    ");
+      		str = str.replace(/\"/g,"&quot;");
+      		str = str.replace(/\'/g,"&#39;");
+		str = str.replace(/\\n/g,"inha_univ");
+     		document.getElementById('give_code').value=str;
+		}
+	</script>
+</form>
+</main>
+</body>
+</html>

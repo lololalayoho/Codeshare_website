@@ -1,0 +1,143 @@
+.board-search {
+  color: black;
+  position: absolute;
+  right: 170px;
+  top: 120px;
+}
+
+table.type06 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #BEE5F4;
+    border-bottom: 1px solid #BEE5F4;
+    margin-left:auto; margin-right:auto;
+}
+table.type06 th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: center;
+    text-align: center;
+}
+table { 
+  vertical-align: center;
+  margin: 40px;}
+
+table.type06 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: center;
+    text-align: center;
+}
+table.type06 .even {
+    background:#BEE5F4;
+}
+
+table.type06 button{
+    background-color:#BEE5F4;
+}
+
+h1{
+  font-size: 60px;
+  padding: 5px 10px 5px;
+  color: #f0d264;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+  margin: 10px 40px 40px 10px;
+  text-align: center;  
+	#background: #eaedf1;
+	font-family: 'Lato', sans-serif;
+}
+.color {
+	width: 350px;
+	margin: 0 auto;
+}
+.color li {
+	margin: 0 15px 0 0;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border-radius: 100%;
+}
+.color .red    {background: #fa5a5a;}
+.color .yellow {background: #f0d264;}
+.color .green  {background: #82c8a0;}
+.color .cyan   {background: #7fccde;}
+.color .blue   {background: #6698cb;}
+.color .purple {background: #cb99c5;}
+
+pre {
+	width: 100%;
+	padding: 30px;
+	background-color: rgba(0, 0, 0, 0.72);
+	color: #f8f8f2;
+	border-radius: 0 0 4px 4px;
+	margin-top: 20px;
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.btn-container, .container {
+	background-color: white;
+	#border-radius: 4px;
+	text-align: center;
+	#margin-bottom: 40px;
+}
+.btn, .btn-two {
+	margin: 9px;
+}
+.btn-gradient {
+	margin: 5px;
+}
+a[class*="btn"] {text-decoration: none;}
+input[class*="btn"], 
+button[class*="btn"] {border: 0;}
+
+
+.btn.block, 
+.btn-two.block, 
+.btn-gradient.block, 
+.btn-effect.block {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/* Colors for .btn and .btn-two */
+
+.btn.green, .btn-two.green   {background-color: #9abf7f;}
+
+
+.rounded {
+  border-radius: 8px;
+}
+
+/* default button style */
+.btn {
+  text-align: center;
+	position: relative;
+	border: 0;
+	padding: 3px 4px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+}
+.btn:active {
+	top: 4px;	
+}
+
+/* color classes for .btn */
+.btn.green {box-shadow: 0px 4px 0px #87a86f;}
+.btn.green:active {box-shadow: 0 0 #87a86f; background-color: #87a86f;}
+

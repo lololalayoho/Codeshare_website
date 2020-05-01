@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sriracha&display=swap");
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff');
+*{
+    padding :auto;
+
+}
+
+body {
+    /*margin: 5px 40px 40px 10px;
+    /*text-align: center;  */
+    background:#BBCA93;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    padding: 20px 10px 5px;
+    color:#5C7955;
+    margin: 20px auto;
+    text-align: center;  
+    font-family: 'Sriracha', cursive;
+    font-style: bold;
+  }
+  button{
+    margin: 5px 50px 0px 1150px;
+  }
+  
+  table.first{
+    margin: 5px 70px 40px 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+
+  table.main th {
+    width: 35px;
+    padding: 20px;
+    margin: 0 70px;
+    font-size: 30px;
+}
+table.main td {
+    padding-left: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+input{
+    /*font-size:15px;*/
+    text-align: center;
+    font-family: 'S-CoreDream-2ExtraLight';
+    background-color: unset;
+    border:2px solid white;
+  }
+
+input.origin {
+    width:100px;
+    height:30px;
+    text-align: center;
+    
+  }
+  input.problemname {
+    width:200px;
+    height:30px;
+  }
+  input.site {
+    width:600px;
+    height:30px;
+  }
+  table.main{
+    margin: 0 20px;
+    color: #81665C;
+  }
+
+  .btn.yellow{background-color: #f0d264;}
+
+  .rounded {
+    border-radius: 8px;
+  }
+  
+  /* default button style */
+  .btn {
+    text-align: center;
+      position: relative;
+      border: 0;
+      padding: 3px 4px;
+      display: inline-block;
+      font-size: 25PX;
+      text-align: center;
+      color: white;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  .btn:active {
+      top: 4px;	
+  }
+

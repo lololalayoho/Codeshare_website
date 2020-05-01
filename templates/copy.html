@@ -1,0 +1,119 @@
+ng="ko">
+<head>
+    <style>
+        ul { list-style: none }
+    </style>
+	<link rel="stylesheet" href="{{ url_for('static', filename='board_styles.css') }}">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="decription" content="board">
+        <title>Board</title>
+</head>
+
+<body>
+
+<div class="wrap">
+<ul class="board-search">
+        <li>
+        <input type="radio" name="searchtype" id="search01" checked="checked">
+        <label for="search01">분반</label>
+     
+        <input type="radio" name="searchtype" id="search02" checked="checked">
+        <label for="search02">제목</label>
+
+        <input type="text" title="검색어를 입력하세요">
+        <input type="submit" value="검색">
+        </li>
+</ul>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" summary="첫 게시판" class="board_list">
+    <caption>Code Board</caption>
+    <colgroup>
+        <col style="width:10%">
+        <col style="width:90%">
+    </colgroup>
+    <thread>
+        <tr>
+            <th scope="col">분반</th>
+            <th scope="col">제목</th>
+        </tr>
+    </thread>
+    <tbody>
+    <div>
+        {% for i in Week %}
+            <tr>
+                <td>{{i['class']}}</td>
+		<td>{{i['week']}}</td>
+            </tr>
+        {% endfor %}
+    </div>
+
+<!--
+        <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+         <tr>
+            <td></td>
+            <td class="tLeft">
+                <a href="#"></a>
+            </td>
+        </tr>
+-->
+    </tbody>
+</table>
+
+
+</body>
+</html>

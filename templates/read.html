@@ -1,0 +1,67 @@
+<html lang="ko">
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=desert"></script>   
+</html>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>write_page</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='read.css')}}">
+  <div style="font-size: 50px; text-align:center; margin-top: 70px; font-weight: bold; font-family: Alvania; color:white;"  >Long Long's code</h8></div>
+  <style>
+    *{  
+     font-family: Consolas, serif;
+    }
+  </style>
+  <script>
+	window.onload=function(){	
+	var str = document.getElementById('old_code').value;
+	str = str.replace(/inha_univ/g,"\/n");
+	document.getElementById('result').innerHTML=str;
+	var element = document.getElementById('result')
+        element.classList.remove("prettyprinted");
+        prettyPrint();
+
+	}
+
+	function next(){
+	var frm=document.read_code;
+	frm.method="post";
+	frm.submit();
+	location.href="/modify"
+	}
+  </script>
+
+</head>
+
+<body>
+	<form name="read_code" action="/modify" method="POST">
+  </br></br>
+  <tr>
+    <h1 class="pronum"><td><output type="text" placeholder="Enter [Problem number] Problem title" name="subject"></td></h1>
+  </tr> 
+  <tr>
+    <td>
+	<input type="hidden" id="old_code" value="{{data[0].code}}">
+	<pre class="prettyprint" id="result" style="border-radius:15px;font-size:18px;font-weight:100;"></pre>
+	
+	<input type="hidden" name="origin" value="{{data[0].origin}}">
+	<input type="hidden" name="no" value="{{data[0].no}}">
+	<input type="hidden" name="date" value="{{data[0].date}}">
+	<input type="hidden" name="code" value="{{data[0].code}}">
+    </td>
+  </tr>
+  <tr>
+      <td colspan="2">
+	{% if me %}
+        <input style= "margin-right: 2px;margin-top:0;float:right;font-family: 'Sriracha', cursive;font-size:20px;margin-bottom:20px;"class="modify_button" type="submit" value="modify" onclick="next()">
+	{% endif %}
+      </td>
+  </tr>
+	</form>
+</body>

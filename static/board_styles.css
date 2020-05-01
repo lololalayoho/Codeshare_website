@@ -1,0 +1,102 @@
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+    background:#8BB9C7;
+}
+
+.board-search {
+    color: #f3f3f3;
+    position:absolute;
+    right: 313px;
+    top: 120px;  
+}
+
+table, td {
+    border-collapse: collapse;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+}
+
+table {
+    width:60%;
+    height:30px;
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+    top:180px;
+}
+
+th {
+    color: #f3f3f3;
+}
+
+.containor {
+    margin: 70px;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    right: 232px;
+    top : 90px;
+}
+
+.btn {
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    /*font-family: 'Bree Serif', serif;*/
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1 {
+    color: #fff;
+}
+
+.btn1.hover {
+    color: #3498db;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before {
+    top: 0;
+    border-radius: 0 0 50% 50%; 
+    height: 180%;
+} 
+
+.btn1:hover::before {
+    height: 0%;
+}
+
+caption {
+    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    font-family: 'Bree Serif', serif;
+    color: #f3f3f3;
+    font-size:50px;
+    position: relative;
+    top:-30px;
+    right:320px;
+}
+
+th {
+    padding: 7px;
+}
+
+td {
+    font-color:#3498db;
+    padding: 10px;
+}

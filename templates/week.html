@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PROBLEM LIST</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='week_style.css') }}">
+    <style type="text/css">
+    @font-face {
+        font-family: 'Alvania';
+        src: url('Alvania.ttf');
+    }
+    @font-face {
+        font-family: 'a타이틀고딕1';
+        src: url('a타이틀고딕1.ttf');
+    }
+        ul { list-style: none }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Alvania;cursor:pointer;" onClick=location.href="/button">THIS WEEK'S PROBLEM</h1>
+
+    <div class="containor">
+        <button style="font-size:17px" class="btn green rounded" onclick=location.href="/add_prob"> 게시물 등록 </button>
+    </div>
+    <br>   
+    <table class="type06" style="font-family: a타이틀고딕1;">
+	<tr style="background-color:#9abf7f;;font-weight:bold;">
+	    <td class='first'>분반</td>
+            <td class='first'>출처</td>
+            <td class='first'>문제번호</td>
+            <td class='first'>문제이름</td>
+            <td class='first'>주소</td>
+        </tr>
+	{% for i in week1 %}
+            <tr>
+		<form action="/whosolved" method="POST">
+                <th scope="row">{{i['class']}}</th>
+                <td>{{i['origin']}}</td>
+                <td>{{i['no']}}</td>
+		<input type="hidden" name="no" value="{{i['no']}}">	
+		<input type="hidden" name="origin" value="{{i['origin']}}">
+                <td><input class="btn green rounded" type="submit" value="{{i['title']}}" style="font-size:16px;font-weight:100"></td>
+                <td><a href="{{i['address']}}" target="_blank" class="btn green rounded">바로가기</a></td>
+		</form>
+        </tr>
+	{% endfor %}
+	<tr><td></td></tr>
+	<tr><td></td></tr>
+	
+	{% for i in week2 %}
+            <tr>
+		<form action="/whosolved" method="POST">
+                <th scope="row">{{i['class']}}</th>
+                <td>{{i['origin']}}</td>
+                <td>{{i['no']}}</td>
+		<input type="hidden" name="no" value="{{i['no']}}">	
+		<input type="hidden" name="origin" value="{{i['origin']}}">
+                <td><input class="btn green rounded" type="submit" value="{{i['title']}}" style="font-size:16px;font-weight:100"></td>
+                <td><a href="{{i['address']}}" target="_blank" class="btn green rounded">바로가기</a></td>
+		</form>
+        </tr>
+	{% endfor %}
+    </table>
+
+</body>
+</html>
+

@@ -1,0 +1,734 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:1024/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 289-024-445
+218.148.90.221 - - [03/Mar/2020 22:59:32] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 22:59:32] "GET /favicon.ico HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:34] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 22:59:34] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:34] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:34] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:37] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 22:59:37] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 22:59:38] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 22:59:38] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:38] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:42] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 22:59:42] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:42] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:47] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 22:59:47] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 22:59:47] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+211.231.103.91 - - [03/Mar/2020 23:00:02] "GET / HTTP/1.1" 200 -
+223.38.22.194 - - [03/Mar/2020 23:00:35] "GET / HTTP/1.1" 200 -
+223.38.22.194 - - [03/Mar/2020 23:00:35] "GET /static/home.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:00:58] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:01:00] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:01:00] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:00] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:00] "GET /images/pass-icon.png HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:05] "GET / HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:05] "GET /static/home.css HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:05] "GET /favicon.ico HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:08] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:01:09] "GET /button HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:10] "GET /login HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:10] "GET /static/login_styles.css HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:10] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:10] "GET /images/user-icon.png HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:10] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:10] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:01:10] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:10] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:23] "POST /login HTTP/1.1" 302 -
+221.146.155.16 - - [03/Mar/2020 23:01:23] "GET /button HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:23] "GET /static/button_styles.css HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:26] "GET /solved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:26] "GET /static/list_style.css HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:26] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:26] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:31] "GET /solve HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:31] "GET /static/week_style.css HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:31] "GET /Alvania.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:31] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:36] "GET /solve HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:36] "GET /Alvania.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:36] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:49] "GET / HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:56] "GET /solved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:01:56] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:01:56] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:57] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:01:57] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:57] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:01:57] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:02:01] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:02:01] "GET /button HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:05] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:05] "GET /static/whoSolvedstl.css HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:05] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:05] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:02:06] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:02:06] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:02:06] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:07] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:07] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:07] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:10] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:10] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:10] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:13] "GET /solve HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:13] "GET /Alvania.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:13] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:18] "GET /solved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:19] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:19] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:27] "GET /solve HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:27] "GET /Alvania.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:27] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:33] "GET /solved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:33] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:33] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:34] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:34] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:34] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:36] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:36] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:36] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+()
+()
+()
+()
+[{u'origin': u'SW', u'title': u'\ud540\ubcfc', u'no': 5650}]
+#include &lt;iostream&gt;<br />#include &lt;math.h&gt;<br />#include &lt;memory.h&gt;<br />using namespace std;<br /><br />int N, X, ans;<br />int map[20][20];<br />bool horvisit[20][20];<br />bool vervisit[20][20];<br /><br />int vx[] = { -1,1 };<br />int vy[] = { 0,0 };<br />int hx[] = { 0,0 };<br />int hy[] = { -1,1 };<br /><br />void horizon() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * hx[i];<br />               int ny = y + d * hy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || horvisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++)<br />                  horvisit[x + d * hx[i]][y + d * hy[i]] = true;<br /><br />            }<br />         }<br />      }<br />   }<br />}<br />void vertical() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * vx[i];<br />               int ny = y + d * vy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || vervisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++) {<br />                  vervisit[x + d * vx[i]][y + d * vy[i]] = true;<br />               }<br />            }<br />         }<br />      }<br />   }<br />}<br /><br />int check() {<br />   vertical();<br />   horizon();<br />   bool airstrip = true;<br />   int cnt = 0;<br />   for (int i = 0; i &lt; N; i++) {<br />      airstrip = true;<br />      for (int j = 1; j &lt; N; j++) {<br />         int h = map[i][j - 1] - map[i][j];<br />         if (abs(h) &gt; 1) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if ((h == 1 && !horvisit[i][j]) || (h == -1 && !horvisit[i][j - 1])) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (h == 1 && horvisit[i][j] && j + X &lt; N && map[i][j + X] == map[i][j - 1]) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (h == -1 && horvisit[i][j - 1] && j - X - 1 &gt;= 0 && map[i][j - X - 1] == map[i][j]) {<br />            airstrip = false;<br />            break;<br />         }<br /><br />      }<br />      if (airstrip)<br />         cnt++;<br /><br /><br />   }<br />   for (int i = 0; i &lt; N; i++) {<br />      airstrip = true;<br />      for (int j = 1; j &lt; N; j++) {<br />         int v = map[j - 1][i] - map[j][i];<br />         if (abs(v) &gt; 1) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if ((v == 1 && !vervisit[j][i]) || (v == -1 && !vervisit[j - 1][i])) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (v == 1 && vervisit[j][i] && j + X &lt; N && map[j + X][i] == map[j - 1][i]) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (v == -1 && vervisit[j - 1][i] && j - X - 1 &gt;= 0 && map[j - X - 1][i] == map[j][i]) {<br />            airstrip = false;<br />            break;<br />         }<br /><br />      }<br />      if (airstrip)<br />   221.146.155.16 - - [03/Mar/2020 23:02:39] "POST /read_code HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:39] "GET /static/read.css HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:55] "GET /solved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:55] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:55] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:57] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:57] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:57] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:58] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:02:58] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:02:58] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:00] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:00] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:00] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:02] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:02] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:02] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:04] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:04] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:04] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:06] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:06] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:06] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:07] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:07] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:07] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:08] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:08] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:08] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:10] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:10] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:10] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:11] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:11] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:11] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:13] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:14] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:14] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+      cnt++;<br />   }<br />   return cnt;<br />}<br /><br />int main() {<br />   int T;<br />   cin &gt;&gt; T;<br />   for (int t = 1; t &lt;= T; t++) {<br />      memset(vervisit, false, sizeof(vervisit));<br />      memset(horvisit, false, sizeof(horvisit));<br />      cin &gt;&gt; N &gt;&gt; X;<br />      for (int i = 0; i &lt; N; i++) {<br />         for (int j = 0; j &lt; N; j++) {<br />            cin &gt;&gt; map[i][j];<br />         }<br />      }<br />      cout &lt;&lt; &#39;#&#39; &lt;&lt; t &lt;&lt; &#39; &#39; &lt;&lt; check() &lt;&lt; endl;<br />   }<br />}
+()
+()
+()
+()
+()
+()
+()
+()
+()
+()
+[{u'origin': u'SW', u'title': u'\ud540\ubcfc', u'no': 5650}]
+#include &lt;iostream&gt;<br />#include &lt;math.h&gt;<br />#include &lt;memory.h&gt;<br />using namespace std;<br /><br />int N, X, ans;<br />int map[20][20];<br />bool horvisit[20][20];<br />bool vervisit[20][20];<br /><br />int vx[] = { -1,1 };<br />int vy[] = { 0,0 };<br />int hx[] = { 0,0 };<br />int hy[] = { -1,1 };<br /><br />void horizon() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * hx[i];<br />               int ny = y + d * hy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || horvisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++)<br />                  horvisit[x + d * hx[i]][y + d * hy[i]] = true;<br /><br />            }<br />         }<br />      }<br />   }<br />}<br />void vertical() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * vx[i];<br />               int ny = y + d * vy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || vervisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++) {<br />                  vervisit[x + d * vx[i]][y + d * vy[i]] = true;<br />               }<br />            }<br />         }<br />      }<br />   }<br />}<br /><br />int check() {<br />   vertical();<br />   horizon();<br />   bool airstrip = true;<br />   int cnt = 0;<br />   for (int i = 0; i &lt; N; i++) {<br />      airstrip = true;<br />      for (int j = 1; j &lt; N; j++) {<br />         int h = map[i][j - 1] - map[i][j];<br />         if (abs(h) &gt; 1) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if ((h == 1 && !horvisit[i][j]) || (h == -1 && !horvisit[i][j - 1])) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (h == 1 && horvisit[i][j] && j + X &lt; N && map[i][j + X] == map[i][j - 1]) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (h == -1 && horvisit[i][j - 1] && j - X - 1 &gt;= 0 && map[i][j - X - 1] == map[i][j]) {<br />            airstrip = false;<br />            break;<br />         }<br /><br />      }<br />      if (airstrip)<br />         cnt++;<br /><br /><br />   }<br />   for (int i = 0; i &lt; N; i++) {<br />      airstrip = true;<br />      for (int j = 1; j &lt; N; j++) {<br />         int v = map[j - 1][i] - map[j][i];<br />         if (abs(v) &gt; 1) {<br />            airstrip = false;<br />            brea221.146.155.16 - - [03/Mar/2020 23:03:17] "POST /read_code HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:21] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:21] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:21] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:24] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:24] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:24] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:26] "POST /whosolved HTTP/1.1" 200 -
+221.146.155.16 - - [03/Mar/2020 23:03:26] "GET /Alvania.otf HTTP/1.1" 404 -
+221.146.155.16 - - [03/Mar/2020 23:03:26] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:09:40] "GET / HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:40] "GET /static/home.css HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:40] "GET /favicon.ico HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:09:41] "GET / HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:41] "GET /static/home.css HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:42] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:42] "GET /static/login_styles.css HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:42] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:09:42] "GET /images/user-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:09:42] "GET /images/pass-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:09:43] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:43] "GET /static/login_styles.css HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:09:43] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:09:50] "POST /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:10:08] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:10:13] "POST /login HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:11:33] "GET / HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:11:33] "GET /static/home.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:12:55] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:12:58] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:12:58] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:12:58] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:12:58] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:13:01] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:13:01] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:13:03] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:13:03] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:13:03] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:13:06] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:13:06] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:13:06] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:13:12] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:13:12] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:13:12] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+k;<br />         }<br />         else if ((v == 1 && !vervisit[j][i]) || (v == -1 && !vervisit[j - 1][i])) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (v == 1 && vervisit[j][i] && j + X &lt; N && map[j + X][i] == map[j - 1][i]) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (v == -1 && vervisit[j - 1][i] && j - X - 1 &gt;= 0 && map[j - X - 1][i] == map[j][i]) {<br />            airstrip = false;<br />            break;<br />         }<br /><br />      }<br />      if (airstrip)<br />         cnt++;<br />   }<br />   return cnt;<br />}<br /><br />int main() {<br />   int T;<br />   cin &gt;&gt; T;<br />   for (int t = 1; t &lt;= T; t++) {<br />      memset(vervisit, false, sizeof(vervisit));<br />      memset(horvisit, false, sizeof(horvisit));<br />      cin &gt;&gt; N &gt;&gt; X;<br />      for (int i = 0; i &lt; N; i++) {<br />         for (int j = 0; j &lt; N; j++) {<br />            cin &gt;&gt; map[i][j];<br />         }<br />      }<br />      cout &lt;&lt; &#39;#&#39; &lt;&lt; t &lt;&lt; &#39; &#39; &lt;&lt; check() &lt;&lt; endl;<br />   }<br />}
+()
+()
+()
+()
+[{u'origin': u'SW', u'title': u'\ud540\ubcfc', u'no': 5650}]
+#include &lt;iostream&gt;<br />#include &lt;math.h&gt;<br />#include &lt;memory.h&gt;<br />using namespace std;<br /><br />int N, X, ans;<br />int map[20][20];<br />bool horvisit[20][20];<br />bool vervisit[20][20];<br /><br />int vx[] = { -1,1 };<br />int vy[] = { 0,0 };<br />int hx[] = { 0,0 };<br />int hy[] = { -1,1 };<br /><br />void horizon() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * hx[i];<br />               int ny = y + d * hy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || horvisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++)<br />                  horvisit[x + d * hx[i]][y + d * hy[i]] = true;<br /><br />            }<br />         }<br />      }<br />   }<br />}<br />void vertical() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * vx[i];<br />               int ny = y + d * vy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || vervisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++) {<br />                  vervisit[x + d * vx[i]][y + d * vy[i]] = true;<br />               }<br />            }<br />         }<br />      }<br />   }<br />}<br /><br />int check() {<br />   vertical();<br />   horizon();<br />   bool airstrip = true;<br />   int cnt = 0;<br />   for (int i = 0; i &lt; N; i++) {<br />      airstrip = true;<br />      for (int j = 1; j &lt; N; j++) {<br />         int h = map[i][j - 1] - map[i][j];<br />         if (abs(h) &gt; 1) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if ((h == 1 && !horvisit[i][j]) || (h == -1 && !horvisit[i][j - 1])) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (h == 1 && horvisit[i][j] && j + X &lt; N && map[i][j + X] == map[i][j - 1]) {<br />            airs218.148.90.221 - - [03/Mar/2020 23:13:13] "POST /read_code HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:16:21] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:16:21] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:16:21] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:17:23] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:17:23] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:17:27] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:17:27] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:17:27] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:17:27] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:17:29] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:17:29] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:17:30] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:17:30] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:17:30] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:17:34] "GET /add_prob HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:17:34] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:18:24] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:18:25] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:18:25] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:20:43] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:20:44] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:20:44] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:20:44] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:20:44] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:20:46] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:20:46] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:21:03] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:21:03] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:21:03] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:24:49] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:24:49] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:24:49] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:24:51] "POST /write HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:25:56] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:25:56] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:25:56] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:26:06] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:26:06] "GET /static/whoSolvedstl.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:26:06] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:26:06] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:27:07] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:27:41] "POST /write HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:27:41] "GET /static/write.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:29:03] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:29:03] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:29:03] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:29:04] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:29:04] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:29:04] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:29:29] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:29:29] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:29:29] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:30:11] "GET / HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:30:11] "GET /static/home.css HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:30:12] "GET /favicon.ico HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:30:14] "GET /login HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:30:14] "GET /static/login_styles.css HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:30:14] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:30:14] "GET /images/user-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:30:14] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:30:17] "GET / HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:17] "GET /static/home.css HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:17] "GET /favicon.ico HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:30:22] "GET /login HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:22] "GET /static/login_styles.css HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:22] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:30:23] "GET /images/user-icon.png HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:30:23] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:30:23] "POST /login HTTP/1.1" 302 -
+58.224.132.105 - - [03/Mar/2020 23:30:23] "GET /button HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:30:23] "GET /static/button_styles.css HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:28] "POST /login HTTP/1.1" 302 -
+58.232.164.217 - - [03/Mar/2020 23:30:28] "GET /button HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:28] "GET /static/button_styles.css HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:32] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:32] "GET /static/week_style.css HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:32] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:30:32] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:30:40] "GET / HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:30:40] "GET /favicon.ico HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:30:45] "GET /add_prob HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:45] "GET /static/table_2.css HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:45] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:30:55] "GET /add_prob HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:30:55] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:31:14] "GET / HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:31:15] "GET /login HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:31:15] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:31:15] "GET /images/user-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:31:15] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:31:21] "POST /login HTTP/1.1" 302 -
+58.224.132.105 - - [03/Mar/2020 23:31:21] "GET /button HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:31:22] "GET /solve HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:31:22] "GET /static/week_style.css HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:31:22] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:31:22] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:33:57] "POST /write HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:02] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:02] "GET /static/home.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:04] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:04] "GET /static/login_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:04] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:04] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:04] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:06] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:34:06] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:06] "GET /static/button_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:09] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:09] "GET /static/week_style.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:09] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:09] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:11] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:11] "GET /static/list_style.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:11] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:11] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:14] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:34:14] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:14] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:34:18] "POST /write HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:23] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:23] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:23] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:24] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:24] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:24] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:32] "GET / HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:35] "GET /login HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:35] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:36] "GET /images/user-icon.png HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:36] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:39] "POST /login HTTP/1.1" 302 -
+58.232.164.217 - - [03/Mar/2020 23:37:39] "GET /button HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:41] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:41] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:41] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:43] "GET /button HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:45] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:45] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:45] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:46] "GET /button HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:47] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:48] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:48] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:49] "GET /button HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:51] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:37:51] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:37:51] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:52:51] "GET / HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:52:52] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:52:52] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:52:52] "GET /images/pass-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:52:52] "GET /images/user-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:52:54] "POST /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:52:57] "POST /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:53:07] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:53:13] "POST /login HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:53:42] "GET / HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:53:50] "GET /login HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:53:50] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:53:50] "GET /images/user-icon.png HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:53:50] "GET /images/pass-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:53:56] "POST /login HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:53:56] "POST /login HTTP/1.1" 302 -
+58.232.164.217 - - [03/Mar/2020 23:53:56] "GET /button HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:53:57] "GET /login HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:53:58] "GET /solve HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:53:58] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:53:58] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:53:58] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [03/Mar/2020 23:53:58] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:53:58] "GET /images/user-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [03/Mar/2020 23:53:58] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.232.164.217 - - [03/Mar/2020 23:54:48] "GET /add_prob HTTP/1.1" 200 -
+58.232.164.217 - - [03/Mar/2020 23:54:49] "GET /Alvania.ttf HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:55:15] "GET / HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:55:16] "GET /login HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:55:16] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:55:16] "GET /images/user-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:55:16] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:55:34] "POST /login HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:55:36] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:55:42] "GET / HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:55:43] "POST /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:55:44] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:55:44] "GET /static/login_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:55:44] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:55:44] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:55:44] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [03/Mar/2020 23:55:48] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:56:12] "POST /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:56:15] "GET /login HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:56:21] "POST /login HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:56:23] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:56:24] "POST /login HTTP/1.1" 200 -
+58.224.132.105 - - [03/Mar/2020 23:57:11] "POST /login HTTP/1.1" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:1024/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 289-024-445
+218.148.90.221 - - [03/Mar/2020 23:58:04] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:58:05] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:58:05] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:58:05] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:58:05] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:58:49] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:58:49] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:58:49] "GET /static/button_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:59:12] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:59:22] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:59:24] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:59:24] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:59:24] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:59:24] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:59:27] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [03/Mar/2020 23:59:27] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:59:29] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:59:29] "GET /static/week_style.css HTTP/1.1" 200 -
+218.148.90.221 - - [03/Mar/2020 23:59:29] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [03/Mar/2020 23:59:29] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 00:00:13] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 00:00:13] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 00:00:16] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 00:00:16] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 00:00:16] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 00:00:16] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 00:00:17] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [04/Mar/2020 00:00:17] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 00:00:18] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 00:00:18] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 00:00:18] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 00:00:21] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 00:00:21] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 00:00:21] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+211.222.231.20 - - [04/Mar/2020 00:00:38] "POST /login HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:00:40] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:00:41] "GET /login HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:00:41] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+211.222.231.20 - - [04/Mar/2020 00:00:41] "GET /images/user-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [04/Mar/2020 00:00:41] "GET /images/pass-icon.png HTTP/1.1" 404 -
+211.222.231.20 - - [04/Mar/2020 00:00:47] "POST /login HTTP/1.1" 302 -
+211.222.231.20 - - [04/Mar/2020 00:00:47] "GET /button HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:00:47] "GET /static/button_styles.css HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:00:49] "GET /solve HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:00:49] "GET /static/week_style.css HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:00:49] "GET /Alvania.ttf HTTP/1.1" 404 -
+211.222.231.20 - - [04/Mar/2020 00:00:49] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+58.232.164.217 - - [04/Mar/2020 00:02:05] "GET /Alvania.ttf HTTP/1.1" 404 -
+27.0.238.182 - - [04/Mar/2020 00:09:04] "GET / HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:19:12] "GET /solved HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:19:12] "GET /static/list_style.css HTTP/1.1" 200 -
+211.222.231.20 - - [04/Mar/2020 00:19:12] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+211.222.231.20 - - [04/Mar/2020 00:19:12] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+58.224.132.105 - - [04/Mar/2020 01:32:14] "GET / HTTP/1.1" 200 -
+58.224.132.105 - - [04/Mar/2020 01:32:17] "GET /login HTTP/1.1" 200 -
+58.224.132.105 - - [04/Mar/2020 01:32:17] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+58.224.132.105 - - [04/Mar/2020 01:32:17] "GET /images/user-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [04/Mar/2020 01:32:17] "GET /images/pass-icon.png HTTP/1.1" 404 -
+58.224.132.105 - - [04/Mar/2020 01:32:24] "POST /login HTTP/1.1" 302 -
+58.224.132.105 - - [04/Mar/2020 01:32:24] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:03] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:03] "GET /static/home.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:04] "GET /favicon.ico HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:09] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:09] "GET /static/login_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:09] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:10] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:10] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:20] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [04/Mar/2020 02:27:20] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:20] "GET /static/button_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:22] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:22] "GET /static/list_style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:22] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:22] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:26] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:26] "GET /static/week_style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:26] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:26] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:30] "GET /solved HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:30] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:30] "GET /fonts/Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:33] "POST /whosolved HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:33] "GET /static/whoSolvedstl.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:33] "GET /Alvania.otf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:27:33] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+[{u'origin': u'SW', u'title': u'\ud540\ubcfc', u'no': 5650}]
+#include &lt;iostream&gt;<br />#include &lt;math.h&gt;<br />#include &lt;memory.h&gt;<br />using namespace std;<br /><br />int N, X, ans;<br />int map[20][20];<br />bool horvisit[20][20];<br />bool vervisit[20][20];<br /><br />int vx[] = { -1,1 };<br />int vy[] = { 0,0 };<br />int hx[] = { 0,0 };<br />int hy[] = { -1,1 };<br /><br />void horizon() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * hx[i];<br />               int ny = y + d * hy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || horvisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++)<br />                  horvisit[x + d * hx[i]][y + d * hy[i]] = true;<br /><br />            }<br />         }<br />      }<br />   }<br />}<br />void vertical() {<br />   for (int x = 0; x &lt; N; x++) {<br />      for (int y = 0; y &lt; N; y++) {<br /><br />         for (int i = 0; i &lt; 2; i++) {<br />            bool slope = true;<br />            for (int d = 1; d &lt;= X; d++) {<br />               int nx = x + d * vx[i];<br />               int ny = y + d * vy[i];<br />               if (nx &gt;= N || nx &lt; 0 || ny &lt; 0 || ny &gt;= N) {<br />                  slope = false;<br />                  break;<br />               }<br />               if (map[nx][ny] != map[x][y] - 1 || vervisit[nx][ny]) {<br />                  slope = false;<br />                  break;<br />               }<br />            }<br />            if (slope) {<br />               for (int d = 1; d &lt;= X; d++) {<br />                  vervisit[x + d * vx[i]][y + d * vy[i]] = true;<br />               }<br />            }<br />         }<br />      }<br />   }<br />}<br /><br />int check() {<br />   vertical();<br />   horizon();<br />   bool airstrip = true;<br />   int cnt = 0;<br />   for (int i = 0; i &lt; N; i++) {<br />      airstrip = true;<br />      for (int j = 1; j &lt; N; j++) {<br />         int h = map[i][j - 1] - map[i][j];<br />         if (abs(h) &gt; 1) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if ((h == 1 && !horvisit[i][j]) || (h == -1 && !horvisit[i][j - 1])) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (h == 1 && horvisit[i][j] && j + X &lt; N && map[i][j + X] == map[i][j - 1]) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (h == -1 && horvisit[i][j - 1] && j - X - 1 &gt;= 0 && map[i][j - X - 1] == map[i][j]) {<br />            airstrip = false;<br />            break;<br />         }<br /><br />      }<br />      if (airstrip)<br />         cnt++;<br /><br /><br />   }<br />   for (int i = 0; i &lt; N; i++) {<br />      airstrip = true;<br />      for (int j = 1; j &lt; N; j++) {<br />         int v = map[j - 1][i] - map[j][i];<br />         if (abs(v) &gt; 1) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if ((v == 1 && !vervisit[j][i]) || (v == -1 && !vervisit[j - 1][i])) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (v == 1 && vervisit[j][i] && j + X &lt; N && map[j + X][i] == map[j - 1][i]) {<br />            airstrip = false;<br />            break;<br />         }<br />         else if (v == -1 && vervisit[j - 1][i] && j - X - 1 &gt;= 0 && map[j - X - 1][i] == map[j][i]) {<br />            airstrip = false;<br />            break;<br />         }<br /><br />      }<br />      if (airstrip)<br />         cnt++;218.148.90.221 - - [04/Mar/2020 02:27:35] "POST /read_code HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:35] "GET /static/read.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:47] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:56] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:56] "GET /static/home.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:27:56] "GET /favicon.ico HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:28:09] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:09] "GET /static/login_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:09] "GET /ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:28:09] "GET /images/pass-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:28:09] "GET /images/user-icon.png HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:28:20] "POST /login HTTP/1.1" 302 -
+218.148.90.221 - - [04/Mar/2020 02:28:20] "GET /button HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:20] "GET /static/button_styles.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:21] "GET /solve HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:21] "GET /static/week_style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:21] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:28:21] "GET /a타이틀고딕1.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:28:22] "GET /add_prob HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:22] "GET /static/table_2.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:23] "GET /Alvania.ttf HTTP/1.1" 404 -
+218.148.90.221 - - [04/Mar/2020 02:28:27] "GET /login HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 02:28:28] "GET / HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:42] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/app/app.py", line 32, in home
+    cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 771, in _execute_command
+    self._write_bytes(packet)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 718, in _write_bytes
+    "MySQL server has gone away (%r)" % (e,))
+OperationalError: (2006, "MySQL server has gone away (error(32, 'Broken pipe'))")
+218.148.90.221 - - [04/Mar/2020 12:40:42] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:42] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:42] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:42] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:43] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:47] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/app/app.py", line 32, in home
+    cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+InterfaceError: (0, '')
+218.148.90.221 - - [04/Mar/2020 12:40:47] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:47] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:47] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:47] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:47] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:40:47] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:41:04] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/app/app.py", line 32, in home
+    cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+InterfaceError: (0, '')
+218.148.90.221 - - [04/Mar/2020 12:41:05] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:41:05] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:41:05] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:41:05] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:41:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:41:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:23] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/app/app.py", line 32, in home
+    cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+InterfaceError: (0, '')
+218.148.90.221 - - [04/Mar/2020 12:46:24] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:24] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:24] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:24] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:38] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/app/app.py", line 32, in home
+    cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+InterfaceError: (0, '')
+218.148.90.221 - - [04/Mar/2020 12:46:38] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:38] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:38] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:38] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:38] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 12:46:38] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 13:08:20] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/app/app.py", line 32, in home
+    cursor.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/usr/local/lib/python2.7/dist-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+InterfaceError: (0, '')
+218.148.90.221 - - [04/Mar/2020 13:08:20] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 13:08:20] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 13:08:20] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 13:08:20] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 13:08:20] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.148.90.221 - - [04/Mar/2020 13:08:20] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
