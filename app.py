@@ -302,7 +302,15 @@ def modify():
 	})
 	return render_template('modify.html', modi = modi)
 
-
+@app.route('/Delete',methods=['POST'])
+def Delete_code():
+	id = int(session['id'])
+	origin = request.form['origin']
+	no = request.form['no']
+	sql = "DELETE FROM SOLVE WHERE id = '%s' AND origin = '%s' AND no = '%s'"%(id,origin,no)
+	cursor.execute(sql)
+	conn.commit()
+	return redirect(url_for('solved'))
 @app.route('/modify_code', methods=['POST'])
 def modify_code():
 	origin = request.form['origin']
