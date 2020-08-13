@@ -52,6 +52,8 @@ def home():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 	"""Login Form"""
+	if 'id' in session:
+		return redirect(url_for('button'))
 	if request.method == 'GET':
 		return render_template('login.html')
 
