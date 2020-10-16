@@ -309,7 +309,8 @@ def Delete_code():
 	id = int(session['id'])
 	origin = request.form['origin']
 	no = request.form['no']
-	sql = "DELETE FROM SOLVE WHERE id = '%s' AND origin = '%s' AND no = '%s'"%(id,origin,no)
+	date = request.form['date']
+	sql = "DELETE FROM SOLVE WHERE id = '%s' AND origin = '%s' AND no = '%s' AND date = '%s'"%(id, origin, no, date)
 	cursor.execute(sql)
 	conn.commit()
 	return redirect(url_for('solved'))
