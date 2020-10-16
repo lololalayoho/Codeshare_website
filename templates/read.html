@@ -76,7 +76,7 @@
 	<form name="Delete_code" action="/Delete" method="POST">
 	<input type="hidden" name="origin" value="{{data[0].origin}}">
 	<input type="hidden" name="no" value="{{data[0].no}}">
-
+	<input type="hidden" name="date" value="{{data[0].date}}">
 
 	{% if me %}
 	<input style="background-color:red;margin-right: 2px;margin-top:0;float:right;font-family: 'Sriracha', cursive;font-size:20px;margin-bottom:20px;"class="modify_button"type="submit" value="Delete"  onclick="return confirm('삭제하시겠습니까');"/>
