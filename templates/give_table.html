@@ -76,7 +76,17 @@
         <th>PROBLEM NAME</th>
         <th>SITE ADDRESS</th>
     </tr>
-
+<!--
+{% for i in class1 %}
+	<tr>
+	<td> <div><input class="origin" type="text" name="origin[]" value="{{i['origin']}}" placeholder="origin" /></div></td>
+	<td> <div><input class="prob_num"type="text" name="no[]" value="{{i['no']}}" placeholder="problem number" /></div></td>
+	<td> <div ><input class="prob_name"type="text" name="title[]" value="{{i['title']}}" placeholder="problem name" /></div></td>
+	<td> <div><input class="site"type="text" name="address[]" value="{{i['address']}}" placeholder="site address" /></div></td>
+	<td><button class="delBtn btn yellow rounded" style="margin-left:5px; margin-bottom: 5px;">delete</button></td>
+	</tr>
+{% endfor %}
+-->
 <tr class="item1"> <!--추가되는 부분-->
 <td> <div><input class="origin" type="text" name="origin[]"  placeholder="origin" /></div></td>
 <td> <div><input class="prob_num"type="text" name="no[]" placeholder="problem number" /></div></td>

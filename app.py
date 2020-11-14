@@ -158,7 +158,7 @@ def solved():
 				})
 			return render_template('search.html', list=list)
 
-@app.route('/read_code',methods=['GET','POST'])
+@app.route('/read_code', methods=['GET','POST'])
 def read_code():
 	if request.method == 'POST':
 		origin = request.form['origin']
@@ -167,7 +167,7 @@ def read_code():
 		date = request.form['date']
 		sql = "select title from PROBLEM WHERE no='%s' AND origin='%s'"%(no,origin)
 		cursor.execute(sql)
-		title=cursor.fetchone()
+		title = cursor.fetchone()
 		sql = "select code from SOLVE where origin=%s and no=%s and id = %s and date = %s" 
 		me = 0
 		if int(id) == session['id']:
@@ -175,7 +175,7 @@ def read_code():
 		value = (origin,no,id,date)
 		cursor.execute(sql,value)
 		result = cursor.fetchone()
-		data=[]
+		data = []
 		data.append({
 			"title":title,
 			"code":result['code'],
@@ -197,7 +197,7 @@ def whosolved():
 		if result:
 			sql = "SELECT u.id, s.date, p.origin, p.no, p.title, u.name FROM USER u, SOLVE s, PROBLEM p WHERE s.origin = '%s' AND s.no = '%s' AND s.id = u.id AND s.origin = p.origin AND s.no = p.no ORDER BY s.date DESC"%(origin, no)
 			cursor.execute(sql)
-			list=[]
+			list = []
 			for result in cursor.fetchall():
 				list.append({
 						"date":result['date'],
@@ -207,7 +207,15 @@ def whosolved():
 						"name":result['name'],
 						"id":result['id']
 					})
-			return render_template('whoSolved.html', list=list)
+			sql = "SELECT name FROM USER u WHERE NOT EXISTS (SELECT s.seq FROM SOLVE s WHERE s.origin = '%s' AND s.no = '%s' AND u.id = s.id) ORDER BY class DESC;" %(origin, no)
+			cursor.execute(sql)
+			bad = []
+			for result in cursor.fetchall():
+				bad.append({
+					"name":result['name']
+					})
+			print(bad)
+			return render_template('whoSolved.html', list=list, bad=bad)
 		else:
 			sql="SELECT title FROM PROBLEM WHERE no = '%s' AND origin = '%s'"%(no, origin)
 			cursor.execute(sql)
@@ -242,7 +250,29 @@ def write():
 def add_prob():
 	"""add problem"""
 	if request.method == 'GET':
-		return render_template('give_table.html')
+		sql = "SELECT g.origin, g.no, p.title, p.address FROM GIVE g, PROBLEM p WHERE g.class = 1 AND g.no = p.no AND g.origin = p.origin;"
+		cursor.execute(sql)
+		class1 = []
+		for result in  cursor.fetchall():
+			class1.append({
+				"origin":result['origin'],
+				"no":result['no'],
+				"title":result['title'],
+				"address":result['address']
+			})
+
+		sql = "SELECT g.origin, g.no, p.title, p.address FROM GIVE g, PROBLEM p WHERE g.class = 2 AND g.no = p.no AND g.origin = p.origin;"
+		cursor.execute(sql)
+		class2 = []
+		for result in cursor.fetchall():
+			class2.append({
+				"origin":result['origin'],
+				"no":result['no'],
+				"title":result['title'],
+				"address":result['address']
+			})
+		
+		return render_template('give_table.html', class1 = class1, class2 = class2)
 	else:
 		clas = request.form['checkbox1[]']
 		sql="DELETE FROM GIVE WHERE class='%s'"%(clas)
@@ -314,6 +344,7 @@ def Delete_code():
 	cursor.execute(sql)
 	conn.commit()
 	return redirect(url_for('solved'))
+
 @app.route('/modify_code', methods=['POST'])
 def modify_code():
 	origin = request.form['origin']
@@ -329,4 +360,4 @@ def modify_code():
 
 if __name__ == '__main__':
 	app.debug = True
-	app.run(host='0.0.0.0',port=1024,debug=True)
+	app.run(host='0.0.0.0', port=1024, debug=True)
