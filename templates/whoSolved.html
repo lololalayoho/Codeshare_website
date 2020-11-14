@@ -64,6 +64,12 @@
             </tr>
 	{% endfor %}
 	</table>
+	{% if bad %}
+		<font size='4' color='FF0000' face='a타이틀고딕'>안 푼 사 람</font><br><br>
+		{% for i in bad %}
+		<font size='4' face='a타이틀고딕1;'>{{i['name']}}</font>
+		{% endfor %}
+	{% endif %}
 {% else %}
 
     <h1 style="font-family: Alvania;">WHO SOLVED PROBLEM?</h1>

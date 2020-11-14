@@ -38,7 +38,7 @@ text-align: center;
 /* Colors for .btn and .btn-two */
 
 .btn.green, .btn-two.green   {background-color: #9abf7f;}
-
+.btn.red, .btn-two.red {background-color: #C07070;}
 
 .rounded {
 border-radius: 8px;
@@ -61,6 +61,8 @@ top: 4px;
 /* color classes for .btn */
 .btn.green {box-shadow: 0px 4px 0px #87a86f;}
 .btn.green:active {box-shadow: 0 0 #87a86f; background-color: #87a86f;}
+.btn.red {box-shadow: 0px 4px 0px #9E5A5A;}
+.btn.red:active {box-shadow: 0 0 #9E5A5A; background-color: #9E5A5A;}
 
 
 table.type06 {
