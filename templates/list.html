@@ -1,57 +1,64 @@
 <DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>PROBLEM LIST</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='list_style.css') }}">
-    <style type="text/css">
-    @font-face {
-        font-family: 'Alvania';
-        src:url('fonts/Alvania.otf')format('truetype');
-    }
-    @font-face {
-        font-family: 'a타이틀고딕1';
-        src: url('a타이틀고딕1.ttf');
-    }
-        ul { list-style: none }
-    </style>
-</head>
-<body>
-    <h1 style="font-family: Alvania;cursor:pointer" onClick=location.href="/button">PROBLEM LIST</h1>
-<form name="search-form" class="search-form" action="/solved" method="POST">
-    <ul class="board-search">
-        <li>
-        <label><input type="radio" name="searchtype" value="name" id="name" checked="checked">작성자</label>
-     
-        <label><input type="radio" name="searchtype" value="title" id="title" checked="checked">제목</label>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>PROBLEM LIST</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='list_style.css') }}">
+        <style type="text/css">
+            @font-face {
+                font-family: 'Alvania';
+                src: url('fonts/Alvania.otf')format('truetype');
+            }
+
+            @font-face {
+                font-family: 'a타이틀고딕1';
+                src: url('a타이틀고딕1.ttf');
+            }
+
+            ul {
+                list-style: none
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="font-family: Alvania;cursor:pointer" onClick=location.href="/button">PROBLEM LIST</h1>
+        <form name="search-form" class="search-form" action="/solved" method="POST">
+            <ul class="board-search">
+                <li>
+                    <label><input type="radio" name="searchtype" value="name" id="name" checked="checked">작성자</label>
+
+                    <label><input type="radio" name="searchtype" value="title" id="title" checked="checked">제목</label>
 
 
-        <input type="text" name="search"  placeholder="검색어를 입력하세요">
-        <input style="font-size:15px"type="submit" class="btn green rounded" value=" 검색 ">
-        </li>
-    </ul>
-</form>
-    <br><br>
-    <table class="type06" style="font-family: a타이틀고딕1;">
-        <tr style="background-color: #9abf7f;font-weight:bold;">
-            <td class='first'>출처</td>
-            <td class='first'>문제번호</td>
-            <td class='first'>문제이름</td>
-            <td class='first'>주소</td>
-        </tr>
-	{% for i in problem %}
-	    <tr>
-		<th scope="row">{{i['origin']}}</th>
+                    <input type="text" name="search" placeholder="검색어를 입력하세요">
+                    <input style="font-size:15px" type="submit" class="btn green rounded" value=" 검색 ">
+                </li>
+            </ul>
+        </form>
+        <br><br>
+        <table class="type06" style="font-family: a타이틀고딕1;">
+            <tr style="background-color: #9abf7f;font-weight:bold;">
+                <td class='first'>출처</td>
+                <td class='first'>문제번호</td>
+                <td class='first'>문제이름</td>
+                <td class='first'>주소</td>
+            </tr>
+            {% for i in problem %}
+            <tr>
+                <th scope="row">{{i['origin']}}</th>
                 <td>{{i['no']}}</td>
-		<form action="/whosolved" method="POST">
-		<input name="origin"type="hidden"value="{{i['origin']}}">
-		<input type="hidden" name="no" value="{{i['no']}}">
-		<td><input class="btn green rounded" type="submit" value="{{i['title']}}" style ="font-size:16px;font-weight:100"></td>
-              <td><a href="{{i['address']}}" target="_blank" class="btn green rounded">바로가기</a></td>
-		</form>
-	    </tr>
-	{% endfor %}
-    </table>
-</body>
-</html>
+                <form action="/whosolved" method="POST">
+                    <input name="origin" type="hidden" value="{{i['origin']}}">
+                    <input type="hidden" name="no" value="{{i['no']}}">
+                    <td><input class="btn green rounded" type="submit" value="{{i['title']}}"
+                            style="font-size:16px;font-weight:100"></td>
+                    <td><a href="{{i['address']}}" target="_blank" class="btn green rounded">바로가기</a></td>
+                </form>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
 
+    </html>

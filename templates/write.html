@@ -1,75 +1,85 @@
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>write_page</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='write.css') }}">
- <h8 class = "longlong"><div style="font-size: 50px; text-align:center; margin-top: 70px; font-weight: bold; font-family: Alvania; color:white;" >Long Long's code</h8></div>
- <style>
+  <h8 class="longlong">
+    <div
+      style="font-size: 50px; text-align:center; margin-top: 70px; font-weight: bold; font-family: Alvania; color:white;">
+      Long Long's code
+  </h8>
+  </div>
+  <style>
     * {
-        font-size: 20px;
-        /*font-family: Consolas, sans-serif;*/
-        /*font-family: 'a타이틀고딕1';*/
-        /*font-family: 'Florsn25';*/
-        font-family: 'lilly';
-        font-weight: lighter;
-   }
-</style>
+      font-size: 20px;
+      /*font-family: Consolas, sans-serif;*/
+      /*font-family: 'a타이틀고딕1';*/
+      /*font-family: 'Florsn25';*/
+      font-family: 'lilly';
+      font-weight: lighter;
+    }
+  </style>
 </head>
 
 <body>
-<div class="main">
-  <form action="/add_code" method="POST">
-    <tr>
-      <td colspan="2">
-        <h7 class="check">choose please
-      </td>
-        </tr>
-    <tr>
-      <td valgn="top">
-        <select name="items1">
-          <option value="C++">C++</option>
-          <option value="C">C</option>
-          <option value="python">python</option>
-        </select>
-      </td>
-        </tr>
+  <div class="main">
+    <form action="/add_code" method="POST">
+      <tr>
+        <td colspan="2">
+          <h7 class="check">choose please
+        </td>
+      </tr>
+      <tr>
+        <td valgn="top">
+          <select name="items1">
+            <option value="C++">C++</option>
+            <option value="C">C</option>
+            <option value="python">python</option>
+          </select>
+        </td>
+      </tr>
       </h7>
-        <br>
-  <tr>
-      <p>
-      <h5 class="code"><th>CODE : </th></h5>
-    <h2 name="container"><td><textarea cols="100" rows="100" style="padding-left:5; padding-right:50; padding-bottom:50; height: 800px; width:100%"  id="code_value" placeholder="Enter your code please" name="content"></textarea></td></h2>
-      </p>
-  </tr>
-  <tr>
-      <td colspan="2">
-        <input type="hidden" name="no" value="{{problem[0].no}}">
-        <input type="hidden" name="origin" value="{{problem[0].origin}}">
-        <input type="hidden" name="title" value="{{problem[0].title}}">
-        <input name="solve_code" value="{{problem[0].code}}" type="hidden" id="give_code">
-        <h3 class="button"><input type="submit" value="submit" onClick="str()"></h3>
-      </td>
-  </tr>
+      <br>
+      <tr>
+        <p>
+        <h5 class="code">
+          <th>CODE : </th>
+        </h5>
+        <h2 name="container">
+          <td><textarea cols="100" rows="100"
+              style="padding-left:5; padding-right:50; padding-bottom:50; height: 800px; width:100%" id="code_value"
+              placeholder="Enter your code please" name="content"></textarea></td>
+        </h2>
+        </p>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="hidden" name="no" value="{{problem[0].no}}">
+          <input type="hidden" name="origin" value="{{problem[0].origin}}">
+          <input type="hidden" name="title" value="{{problem[0].title}}">
+          <input name="solve_code" value="{{problem[0].code}}" type="hidden" id="give_code">
+          <h3 class="button"><input type="submit" value="submit" onClick="str()"></h3>
+        </td>
+      </tr>
 
 
-        <script>
-          function str(){
-                var str = document.getElementById("code_value").value;
-                str = str.replace(/</g,"&lt;");
-                str = str.replace(/>/g,"&gt;");
-                str = str.replace(/\t/g,"    ");
-                str = str.replace(/\"/g,"&quot;");
-                str = str.replace(/\'/g,"&#39;");
-                str = str.replace(/\\n/g,"inha_univ");
-                document.getElementById('give_code').value=str;
-                }
-        </script>
-</form>
-</div>
+      <script>
+        function str() {
+          var str = document.getElementById("code_value").value;
+          str = str.replace(/</g, "&lt;");
+          str = str.replace(/>/g, "&gt;");
+          str = str.replace(/\t/g, "    ");
+          str = str.replace(/\"/g, "&quot;");
+          str = str.replace(/\'/g, "&#39;");
+          str = str.replace(/\\n/g, "inha_univ");
+          document.getElementById('give_code').value = str;
+        }
+      </script>
+    </form>
+  </div>
 </body>
+
 </html>
-
-
-
