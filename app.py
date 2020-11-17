@@ -127,7 +127,7 @@ def solved():
 		search = request.form['search']
 		search = '%'+search+'%'
 		if request.form['searchtype']=='name': 
-			sql="SELECT s.date, u.id, u.class, p.origin, p.no, p.title, u.name FROM USER u, SOLVE s, PROBLEM p WHERE u.name LIKE '%s' AND u.id = s.id AND s.origin = p.origin AND s.no = p.no ORDER BY date DESC"%(search)
+			sql="SELECT s.date, u.id, u.class, p.origin, p.no, p.title, u.name, s.seq FROM USER u, SOLVE s, PROBLEM p WHERE u.name LIKE '%s' AND u.id = s.id AND s.origin = p.origin AND s.no = p.no ORDER BY date DESC"%(search)
 			cursor.execute(sql)
 			list=[]
 			for result in cursor.fetchall():
@@ -138,12 +138,12 @@ def solved():
 					"no":result['no'],
 					"title":result['title'],
 					"name":result['name'],
-					"id":result['id']
-					
+					"id":result['id'],
+					"seq":result['seq']
 				})
 			return render_template('search.html',list=list)
 		else:
-			sql="SELECT s.date, u.id, u.class, p.origin, p.no, p.title, u.name FROM USER u, SOLVE s, PROBLEM p WHERE p.title LIKE '%s' AND s.origin = p.origin AND s.no = p.no AND s.id = u.id ORDER BY date DESC"%(search)
+			sql="SELECT s.date, u.id, u.class, p.origin, p.no, p.title, u.name, s.seq FROM USER u, SOLVE s, PROBLEM p WHERE p.title LIKE '%s' AND s.origin = p.origin AND s.no = p.no AND s.id = u.id ORDER BY date DESC"%(search)
 			cursor.execute(sql)
 			list=[]
 			for result in cursor.fetchall():
@@ -154,7 +154,8 @@ def solved():
 					"no":result['no'],
 					"title":result['title'],
 					"name":result['name'],
-					"id":result['id']
+					"id":result['id'],
+					"seq":result['seq']
 				})
 			return render_template('search.html', list=list)
 
@@ -165,23 +166,20 @@ def read_code():
 		no = request.form['no']
 		id = request.form['id']
 		date = request.form['date']
+		seq = request.form['seq']
 		sql = "select title from PROBLEM WHERE no='%s' AND origin='%s'"%(no,origin)
 		cursor.execute(sql)
 		title = cursor.fetchone()
-		sql = "select code from SOLVE where origin=%s and no=%s and id = %s and date = %s" 
+		sql = "select code from SOLVE where seq = '%s'" %(seq)
 		me = 0
 		if int(id) == session['id']:
-			me = 1	
-		value = (origin,no,id,date)
-		cursor.execute(sql,value)
+			me = 1
+		cursor.execute(sql)
 		result = cursor.fetchone()
 		data = []
 		data.append({
-			"title":title,
-			"code":result['code'],
-			"date":date,
-			"origin":origin,
-			"no":no,
+			"seq":seq,
+			"code":result['code']
 		})
 		
 		return render_template('read.html', data = data, me = me)
@@ -195,7 +193,7 @@ def whosolved():
 		cursor.execute(sql)
 		result = cursor.fetchall()
 		if result:
-			sql = "SELECT u.id, s.date, p.origin, p.no, p.title, u.name FROM USER u, SOLVE s, PROBLEM p WHERE s.origin = '%s' AND s.no = '%s' AND s.id = u.id AND s.origin = p.origin AND s.no = p.no ORDER BY s.date DESC"%(origin, no)
+			sql = "SELECT u.id, s.date, p.origin, p.no, p.title, u.name, s.seq FROM USER u, SOLVE s, PROBLEM p WHERE s.origin = '%s' AND s.no = '%s' AND s.id = u.id AND s.origin = p.origin AND s.no = p.no ORDER BY s.date DESC"%(origin, no)
 			cursor.execute(sql)
 			list = []
 			for result in cursor.fetchall():
@@ -205,7 +203,8 @@ def whosolved():
 						"no":result['no'],
 						"title":result['title'],
 						"name":result['name'],
-						"id":result['id']
+						"id":result['id'],
+						"seq":result['seq']
 					})
 			sql = "SELECT name FROM USER u WHERE NOT EXISTS (SELECT s.seq FROM SOLVE s WHERE s.origin = '%s' AND s.no = '%s' AND u.id = s.id) ORDER BY class DESC;" %(origin, no)
 			cursor.execute(sql)
@@ -278,7 +277,6 @@ def add_prob():
 		sql="DELETE FROM GIVE WHERE class='%s'"%(clas)
 		cursor.execute(sql)
 		conn.commit()
-			
 		origin = request.form.getlist('origin[]')
 		no = request.form.getlist('no[]')
 		title = request.form.getlist('title[]')
@@ -319,41 +317,31 @@ def add_code():
 		conn.commit()	
 		return redirect(url_for('solved'))
 
-@app.route('/modify', methods=['POST'])
-def modify():
-	origin = request.form['origin']
-	no = request.form['no']
-	date = request.form['date']
-	code = request.form['code']
-	modi = []
-	modi.append({
-		"origin":origin,
-		"no":no,
-		"date":date,
-		"code":code
-	})
-	return render_template('modify.html', modi = modi)
-
 @app.route('/Delete',methods=['POST'])
 def Delete_code():
-	id = int(session['id'])
-	origin = request.form['origin']
-	no = request.form['no']
-	date = request.form['date']
-	sql = "DELETE FROM SOLVE WHERE id = '%s' AND origin = '%s' AND no = '%s' AND date = '%s'"%(id, origin, no, date)
+	seq = request.form['seq']
+	sql = "DELETE FROM SOLVE WHERE seq = '%s'"%(seq)
 	cursor.execute(sql)
 	conn.commit()
 	return redirect(url_for('solved'))
 
+@app.route('/modify', methods=['POST'])
+def modify():
+	seq = request.form['seq']
+	code = request.form['code']
+	modi = []
+	modi.append({
+		"seq":seq,
+		"code":code
+	})
+	return render_template('modify.html', modi = modi)
+
 @app.route('/modify_code', methods=['POST'])
 def modify_code():
-	origin = request.form['origin']
-	no = request.form['no']
-	id = int(session['id'])
+	seq = request.form['seq']
 	code = request.form['solve_code']
-	date = request.form['date']
 	mdate = datetime.today()
-	sql = "UPDATE SOLVE SET date = '%s', code = '%s' WHERE id = '%s' AND origin = '%s' AND no = '%s' AND date = '%s'"%(mdate, code, id, origin, no, date)
+	sql = "UPDATE SOLVE SET date = '%s', code = '%s' WHERE seq = '%s'"%(mdate, code, seq)
 	cursor.execute(sql)
 	conn.commit()
 	return redirect(url_for('solved'))
