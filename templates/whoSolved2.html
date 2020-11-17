@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>PROBLEM LIST</title>
     <link rel="stylesheet" href="{{url_for('static',filename='whoSolvedstl.css')}}">
     <style type="text/css">
-    @font-face {
-        font-family: 'Alvania';
-        src: url('Alvania.otf');
-    }
-    @font-face {
-        font-family: 'a타이틀고딕1';
-        src: url('a타이틀고딕1.ttf');
-    }
-    a:link { color:  black; text-decoration: none;}
-    a:visited { color:  #cb99c5; text-decoration: none;}
-    a:hover { color:  #817C79; text-decoration: underline;}
+        @font-face {
+            font-family: 'Alvania';
+            src: url('Alvania.otf');
+        }
 
+        @font-face {
+            font-family: 'a타이틀고딕1';
+            src: url('a타이틀고딕1.ttf');
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #cb99c5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #817C79;
+            text-decoration: underline;
+        }
     </style>
     <script>
-	function next(){
-	 var frm=document.addcode;
-	frm.method ="post";
-	frm.submit();
-	}
+        function next() {
+            var frm = document.addcode;
+            frm.method = "post";
+            frm.submit();
+        }
     </script>
 </head>
+
 <body>
     {% if list %}
     <h1 style="font-family: Alvania;cursor:pointer;" onClick=location.href="/button">WHO SOLVED PROBLEM?</h1>
-	<form name="addcode" action="/write" method="POST">
-	    <input type="hidden" name="origin" value="{{list[0].origin}}">
-	    <input type="hidden" name="no" value="{{list[0].no}}">
-	    <input type="hidden" name="title" value="{{list[0].title}}">
-	    
-    <div class="containor">
-	    <input style="font-size:17px;"type="submit" class="btn green rounded" value="코드등록" onClick="next()">
-	</div>
-	</form>
-  <br> 
+    <form name="addcode" action="/write" method="POST">
+        <input type="hidden" name="origin" value="{{list[0].origin}}">
+        <input type="hidden" name="no" value="{{list[0].no}}">
+        <input type="hidden" name="title" value="{{list[0].title}}">
+
+        <div class="containor">
+            <input style="font-size:17px;" type="submit" class="btn green rounded" value="코드등록" onClick="next()">
+        </div>
+    </form>
+    <br>
     <table class="type06" style="font-family: a타이틀고딕1;">
         <tr>
             <td class='first'>올린시간</td>
@@ -47,36 +61,36 @@
             <td class='first'>문제이름</td>
             <td class='first'>스터디원</td>
         </tr>
-	
-	{% for i in list %}
-            <tr>
-                <td>{{i['date']}}</td>
-		<form id="next_id" name="next_write" action="/read_code" method="POST">
-                <td scope="row" id ="problem_orign">{{i['origin']}}</td>
+
+        {% for i in list %}
+        <tr>
+            <td>{{i['date']}}</td>
+            <form id="next_id" name="next_write" action="/read_code" method="POST">
+                <td scope="row" id="problem_orign">{{i['origin']}}</td>
                 <td id="problem_number">{{i['no']}}</td>
-		<input name="origin" type="hidden" value="{{i['origin']}}">
-		<input name="no" type="hidden" value="{{i['no']}}">
-		<input type="hidden" name="id" value="{{i['id']}}">
-		<input type="hidden" name="date" value="{{i['date']}}">
+                <input name="origin" type="hidden" value="{{i['origin']}}">
+                <input name="no" type="hidden" value="{{i['no']}}">
+                <input type="hidden" name="id" value="{{i['id']}}">
+                <input type="hidden" name="date" value="{{i['date']}}">
                 <td id="problem_name">{{i['title']}}</td>
                 <td><input style="font-size:17px" class="btn green rounded" type="submit" value="{{i['name']}}"></td>
-		</form>
-            </tr>
-	{% endfor %}
-	</table>
-{% else %}
+            </form>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
 
     <h1 style="font-family: Alvania;">WHO SOLVED PROBLEM?</h1>
-	<form name="addcode" action="/write" method="POST">
-	    <input type="hidden" name="origin" value="{{list1[0].origin}}">
-	    <input type="hidden" name="no" value="{{list1[0].no}}">
-	    <input type="hidden" name="title" value="{{list1[0].title}}">
-	    
-    <div class="containor">
-	    <input type="submit" class="btn green rounded" value="코드등록" onClick="next()">
-	</div>
-	</form>
-  <br> 
+    <form name="addcode" action="/write" method="POST">
+        <input type="hidden" name="origin" value="{{list1[0].origin}}">
+        <input type="hidden" name="no" value="{{list1[0].no}}">
+        <input type="hidden" name="title" value="{{list1[0].title}}">
+
+        <div class="containor">
+            <input type="submit" class="btn green rounded" value="코드등록" onClick="next()">
+        </div>
+    </form>
+    <br>
     <table class="type06" style="font-family: a타이틀고딕1;">
         <tr>
             <td class='first'>분반</td>
@@ -85,11 +99,12 @@
             <td class='first'>문제이름</td>
             <td class='first'>스터디원</td>
         </tr>
-	
-            <tr>
-		<td colspan="5">코드가 없습니다.</td>
-		
-            </tr>
-{% endif %}
+
+        <tr>
+            <td colspan="5">코드가 없습니다.</td>
+
+        </tr>
+        {% endif %}
 </body>
+
 </html>
