@@ -91,4 +91,49 @@
 		</td>
 		</form>
 	</tr>
+	{% if cmt %}
+	<table style="font-family: 'a타이틀고딕1';">
+		<thead>
+			<th>작성자</th>
+			<th>내용</th>
+			<th>날짜</th>
+			<th></th>
+		</thead>
+		<tbody>
+			{% for i in cmt %}
+			<tr>
+				<td>
+					<font size='4' face='a타이틀고딕1;'>{{i['name']}}</font>
+				</td>
+				<td>
+					<font size='4' face='a타이틀고딕1;'>{{i['content']}}</font>
+				</td>
+				<td>
+					<font size='4' face='a타이틀고딕1;'>{{i['date']}}</font>
+				</td>
+				{% if i['me'] %}
+				<td>
+					<form name="delete_cmt" action="/delete_comment" method="POST">
+						<input type="hidden" name="num" value="{{i['num']}}">
+						<input type="submit" value="Delete" onclick="return confirm('댓글을 삭제하시겠습니까?');">
+					</form>
+				</td>
+				{% endif %}
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	{% endif %}
+	<tr>
+		<form name="comment" action="/comment" method="POST">
+			<input type="hidden" name="seq" value="{{data[0].seq}}">
+			<td>
+				<input type="text" name="content">
+			</td>
+			<td>
+				<input type="submit" value="등록">
+			</td>
+		</form>
+	</tr>
+	
 </body>

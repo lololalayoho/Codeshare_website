@@ -181,8 +181,23 @@ def read_code():
 			"seq":seq,
 			"code":result['code']
 		})
+
+		sql = "SELECT u.name, c.num, c.content, c.date, c.id FROM USER u JOIN COMMENT c WHERE c.seq = '%s' AND c.id = u.id"%(seq)
+		cursor.execute(sql)
+		cmt=[]
+		for result in cursor.fetchall():
+			cmtme = 0
+			if result['id'] == int(session['id']):
+				cmtme = 1
+			cmt.append({
+				"num":result['num'],
+				"name":result['name'],
+				"content":result['content'],
+				"date":result['date'],
+				"me":cmtme
+			})
 		
-		return render_template('read.html', data = data, me = me)
+		return render_template('read.html', data = data, me = me, cmt=cmt)
 
 @app.route('/whosolved', methods=['GET','POST'])
 def whosolved():
@@ -345,6 +360,27 @@ def modify_code():
 	cursor.execute(sql)
 	conn.commit()
 	return redirect(url_for('solved'))
+
+
+@app.route('/comment', methods=['POST'])
+def add_comment():
+	seq = request.form['seq']
+	id = int(session['id'])
+	content = request.form['content']
+	date = datetime.today()
+	sql = "INSERT INTO COMMENT (id, seq, content, date) VALUES('%s', '%s', '%s', '%s')"%(id, seq, content, date)
+	cursor.execute(sql)
+	conn.commit()
+	return redirect(url_for('solved'))
+
+@app.route('/delete_comment',methods=['POST'])
+def Delete_comment():
+	num = request.form['num']
+	sql = "DELETE FROM COMMENT WHERE num = '%s'"%(num)
+	cursor.execute(sql)
+	conn.commit()
+	return redirect(url_for('solved'))
+
 
 if __name__ == '__main__':
 	app.debug = True
